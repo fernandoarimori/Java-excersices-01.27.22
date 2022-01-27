@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s, c;
+		int idade, qua, dez, tm, tf, to, cont, tc, tn, ta;
+		Scanner in= new Scanner(System.in);
+		cont=0;
+		qua=0;
+		dez=0;
+		tm=0;
+		tf=0;
+		to=0;
+		tc=0;
+		tn=0;
+		ta=0;
+		while (cont<150)
+		{
+			System.out.print("Digite sua idade: \n");
+			idade= in.nextInt();
+			if (idade>40)
+			{
+				qua=qua+idade;
+			}
+			if (idade<18)
+			{
+				dez=dez+idade;
+			}
+			
+			/*
+			 * sexo
+			 */
+			System.out.print("Digite seu sexo: (1=masculino/ 2= feminino/ 3- outros)\n");
+			s= in.nextLine();
+			switch(s)
+			{
+			case "1":
+				tm=tm+1;
+				System.out.print("Você é do sexo masculino.\n");
+				break
+			case "2":
+				tf=tf+1;
+				System.out.print("Você é do sexo feminino.\n");
+				break
+			case "3":
+				to=to+1;
+				System.out.print("Você é considerado outros.\n");
+				break
+			default:
+				System.out.print("Não estabelecido.\n");
+			}
+			
+			
+			/*
+			 * comportamento
+			 */
+			System.out.print("Digite seu sexo: (1=masculino/ 2= feminino/ 3- outros)\n");
+			s= in.nextLine();
+			switch(c)
+			{
+			case "1":
+				tm=tm+1;
+				System.out.print("Você é calmo.\n");
+				break
+			case "2":
+				tf=tf+1;
+				System.out.print("Você é nervoso.\n");
+				break
+			case "3":
+				to=to+1;
+				System.out.print("Você é considerado outros.\n");
+				break
+			default:
+				System.out.print("Não estabelecido.\n");
+				
+			}
+			}
+			
+			cont++;
+		}
+
+	}
+
+}

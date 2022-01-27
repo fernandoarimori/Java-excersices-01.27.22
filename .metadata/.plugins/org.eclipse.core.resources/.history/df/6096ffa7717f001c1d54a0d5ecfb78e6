@@ -1,0 +1,23 @@
+import java.security.DrbgParameters.NextBytes;
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp = new Scanner(System.in);
+
+		for (x = 0; x <= 10; x++) {
+			System.out.print("Digite um número");
+			y = inp.nextInt();
+			if (y == 0 || y % 2 == 0) {
+				System.out.print("Seu número " + y + "é par");
+			}Else
+			{
+				System.out.print("Seu número"+ y+ " é ímpar"");
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp = new Scanner(System.in);
+		int y,x=0;
+
+		for (x = 0; x < 10; x++) {
+			System.out.print("\nDigite um número\n");
+			y = inp.nextInt();
+			if (y == 0 || y % 2 == 0) {
+				System.out.print("\nSeu número " + y + " é par");
+			}
+			else
+			{
+				System.out.print("\nSeu número "+ y+ " é ímpar");
+			}
+		}
+		System.out.print("\nFIM DO PROGRAMA");
+
+		inp.close();
+	}
+
+}
